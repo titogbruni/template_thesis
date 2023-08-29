@@ -167,6 +167,8 @@ Junho de 2023
 
 % INICIO DOS CAPITULOS
 
+\rmfamily % voltando a usar fonte default
+
 \chapter{Primeiro Capitulo}
 \justifying
 
