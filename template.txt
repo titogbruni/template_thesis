@@ -32,6 +32,9 @@
 
 % -- MARGENS -- %
 
+% For better justification
+\usepackage{ragged2e} 
+
 %make itemize respect margins
 \usepackage{enumitem} 
 
@@ -141,12 +144,14 @@ Junho de 2023
 
 
 \section*{Agradecimentos}
+\justifying
 
 \lipsum[1]
 
 \newpage
 
 \section*{Abstract}
+\justifying
 
 \lipsum[1]
 
@@ -163,20 +168,24 @@ Junho de 2023
 % INICIO DOS CAPITULOS
 
 \chapter{Primeiro Capitulo}
+\justifying
 
 \lipsum[1]
 
 \cite{adalasso} suggests that... and Breiman(\citeyear{breiman2001random}) says that ...
 
 \section{Subcapitulo}
+\justifying
 
 \lipsum[1]
 
 \subsection{Subsubcapitulo}
+\justifying
 
 \lipsum[1]
 
 \chapter{Segundo Capitulo}
+\justifying
 
 \lipsum[1]
 
@@ -188,5 +197,6 @@ Junho de 2023
 \appendix
 
 \chapter{Nome}
+\justifying
 
 \end{document}
