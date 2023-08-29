@@ -1,0 +1,192 @@
+\documentclass[12pt,openright,twoside,a4paper,brazil,english,emptypage,openany]{abntex2}
+
+
+% pacote que gera textos aleatorios
+\usepackage{lipsum} % apagar
+
+% -- ESTRUTURA BASICA -- %
+\usepackage[alf]{abntex2cite}
+\usepackage[a4paper, margin=3cm]{geometry}
+\usepackage{appendix}
+\usepackage{caption}
+%\addbibresource{references.bib}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip} % Increased indentation 
+
+% -- ESTETICA -- %
+\usepackage{fancyhdr}% 
+\pagestyle{fancy}
+\usepackage[flushleft]{threeparttable}
+%\usepackage[sc]{mathpazo} % fonte diferente pra símbolos matemáticos
+
+%% -- CREATE TABLE OF CONTENTS -- %%
+
+% Adjust spacing for chapters in the table of contents
+\cftsetindents{chapter}{3em}{2em}
+
+% Adjust spacing for sections in the table of contents
+\cftsetindents{section}{5em}{2em}
+
+% Adjust spacing for subsections in the table of contents
+\cftsetindents{subsection}{5em}{3em}
+
+
+% -- MARGENS -- %
+
+%make itemize respect margins
+\usepackage{enumitem} 
+
+% Adjust itemize margins
+\setlist[itemize]{leftmargin=1.5em, labelsep=0.5em, itemsep=0.5em}
+
+
+
+% -- FONTES e TITULOS -- %
+\usepackage{titlesec} %titulos: deixa letras gordas e titulos em negritos
+
+% Formatting chapter titles
+\titleformat{\chapter}[hang]
+  {\sffamily\bfseries\Large}{\thechapter}{8pt}{\Large\raggedright}
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+
+% Formatting section titles
+\titleformat{\section}
+  {\sffamily\bfseries\large}{\thesection}{8pt}{}
+
+% Formatting subsection titles
+\titleformat{\subsection}
+  {\sffamily\bfseries\normalsize}{\thesubsection}{1em}{}
+
+\usepackage{graphicx} %inserir imagens
+
+
+\hypersetup{
+pdftitle={\@title},
+pdfauthor={\@author},
+pdfsubject={\imprimirpreambulo},
+pdfkeywords={PALAVRAS}{CHAVES}{EM}{PORTUGUES},
+pdfcreator={LaTeX with abnTeX2},
+colorlinks=true,
+linkcolor=blue,
+citecolor=blue,
+urlcolor=blue
+}
+
+% Table of contents
+\makeatletter
+\renewcommand{\tableofcontents}{%
+  \chapter*{\MakeUppercase\contentsname}
+  \@starttoc{toc}
+}
+
+
+
+
+
+\begin{document}
+\pretextual
+\selectlanguage{english}
+
+% Set \parskip to put 10pt between paragraphs
+\setlength{\parskip}{10pt}
+
+% Folha de rosto
+\pagenumbering{arabic}
+%\pagestyle{headings} %cabeçalho
+\pagestyle{fancy}% Change page style to fancy
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+
+\fancyhf{}% Clear header/footer
+%\fancyhead[C]{\leftmark}
+%\renewcommand{\headrulewidth}{0.4pt}% Default \headrulewidth is 0.4pt
+\fancyhead[RO]{\textit{\nouppercase{\newlinetospace{{\leftmark}}}}}
+
+
+\flushright
+\thispagestyle{empty}%tirando numero da primeira pagina
+\includegraphics[width=10cm,right]{logo_puc.png}
+
+\vspace{20pt}
+
+\large{Nome Aluno}
+
+\vspace{100pt}
+
+\Large{\textbf{\sffamily Título da Mono}}
+
+\vspace{90pt}
+
+\normalsize
+Monografia de Final de Curso
+
+\vspace{2pt}
+
+Orientador: Nome Orientador
+
+\vspace{40pt}
+
+\centering
+
+Declaro que o presente trabalho é de minha autoria e que não recorri, para realizá-lo, a nenhuma forma de ajuda externa, exceto quando autorizado pelo professor tutor.
+
+\vspace{60pt}
+
+Rio de Janeiro,
+\wl
+Junho de 2023
+
+\flushleft
+\pagebreak
+
+
+\section*{Agradecimentos}
+
+\lipsum[1]
+
+\newpage
+
+\section*{Abstract}
+
+\lipsum[1]
+
+\vspace{4\onelineskip}
+\noindent
+\section*{Keywords}
+\hspace{1em} oi; tudo bem.
+
+
+%  SUMARIO
+\sffamily \tableofcontents
+
+
+% INICIO DOS CAPITULOS
+
+\chapter{Primeiro Capitulo}
+
+\lipsum[1]
+
+\cite{adalasso} suggests that... and Breiman(\citeyear{breiman2001random}) says that ...
+
+\section{Subcapitulo}
+
+\lipsum[1]
+
+\subsection{Subsubcapitulo}
+
+\lipsum[1]
+
+\chapter{Segundo Capitulo}
+
+\lipsum[1]
+
+\bibliography{references}
+
+
+% APENDICE %
+
+\appendix
+
+\chapter{Nome}
+
+\end{document}
