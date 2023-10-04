@@ -1,6 +1,6 @@
 <a href='https://github.com/titogbruni/template_thesis'><img src='https://github.com/titogbruni/template_thesis/blob/main/images_README/logo_README.png' align="right" height="139" /></a>
 
-#### **TeX template**
+### **TeX template**
 
 Template que usei na minha monografia de final de curso. Esse template está dentro das regras ABNT. 
 
@@ -30,7 +30,7 @@ Ao clicar em "Recompile" você ainda terá problemas, pois falta dar upload em a
 
 **3. Upload dos arquivos que faltam**
 
- - **3.1** - O primeiro arquivo que falta é a imagem da logo da PUC que eu uso no capa. Você pode baixar a imagem que [usei](https://github.com/titogbruni/template_thesis/blob/main/logo_puc.png), ou usar outra logo da puc do seu gosto. Para adicionar arquivos (pdf, jpg,...) no seu documento, clique no botão da imagem abaixo:
+ - **3.1** - O primeiro arquivo que falta é a imagem da logo da PUC que eu uso no capa. Você pode baixar a imagem que [usei](https://github.com/titogbruni/template_thesis/blob/main/logo_puc.png), ou usar outra logo da PUC do seu gosto. Para adicionar arquivos (pdf, jpg,...) no seu documento, clique no botão da imagem abaixo:
 
    <a href='https://github.com/titogbruni/template_thesis'><img src='https://github.com/titogbruni/template_thesis/blob/main/images_README/upload_logo.png' align="top" height="139" /></a>
 
@@ -38,6 +38,8 @@ Ao clicar em "Recompile" você ainda terá problemas, pois falta dar upload em a
 - **3.2** - O segundo arquivo que falta é a bibliografia. Copie o texto do arquivo    [references](https://github.com/titogbruni/template_thesis/blob/main/references.tex), depois clique no botão indicado abaixo e crie um arquivo com nome "references.bib":
 
    <a href='https://github.com/titogbruni/template_thesis'><img src='https://github.com/titogbruni/template_thesis/blob/main/images_README/reference_img.png' align="top" height="139" /></a>
+
+Agora você já consegue compilar o meu template!
 
 ----------------------------------------
 
