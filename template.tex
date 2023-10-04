@@ -5,12 +5,11 @@
 \usepackage{lipsum} % apagar
 
 % -- ESTRUTURA BASICA -- %
-\usepackage[alf]{abntex2cite}
+\usepackage[alf,abnt-etal-cite=2]{abntex2cite}
 \usepackage[a4paper, margin=3cm]{geometry}
 \usepackage{appendix}
 \usepackage{caption}
 %\addbibresource{references.bib}
-\usepackage[skip=10pt plus1pt, indent=40pt]{parskip} % Increased indentation 
 
 % -- ESTETICA -- %
 \usepackage{fancyhdr}% 
@@ -45,6 +44,7 @@
 
 % -- FONTES e TITULOS -- %
 \usepackage{titlesec} %titulos: deixa letras gordas e titulos em negritos
+
 
 % Formatting chapter titles
 \titleformat{\chapter}[hang]
@@ -162,7 +162,8 @@ Junho de 2023
 
 
 %  SUMARIO
-\sffamily \tableofcontents
+%\sffamily
+\tableofcontents
 
 
 % INICIO DOS CAPITULOS
@@ -174,7 +175,8 @@ Junho de 2023
 
 \lipsum[1]
 
-\cite{adalasso} suggests that... and Breiman(\citeyear{breiman2001random}) says that ...
+\cite{elliott2013complete} suggests that... and Breiman(\citeyear{elliott2013complete}) says that ...
+\citeonline{elliott2013complete}
 
 \section{Subcapitulo}
 \justifying

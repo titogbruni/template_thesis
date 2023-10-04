@@ -67,9 +67,24 @@ Se dá através do arquivo "references.bib" .
 
  - **4.4** - cite no main.tex
 
-   Para citar um artigo ao longo do texto principal, sugiro dois comandos: `\cite{}` e `\citeyear{}` que citam nome e data, e (apenas) data, respectivamente. 
+   Para citar um artigo ao longo do texto principal, sugiro 3 comandos: `\citeonline` `\cite{}` e `\citeyear{}`. 
 
-   No exemplo acima, o nome da citação, que sempre se encontra na primeira string da citação BibTeX, é **garcia2003taxa**, logo poderia citar usando `\cite{garcia2003taxa}`.
+   No exemplo acima, o nome da citação, que sempre se encontra na primeira string da citação BibTeX, é **garcia2003taxa**, logo para citá-lo:
+   
+<table>
+<tr>
+<td>
+
+|             código              |                             output                             |
+|---------------------------------|----------------------------------------------------------------|
+| `\citeonline{garcia2003taxa}`   | $${\color{blue}{Garcia\text{ }e\text{ }Didier\text{ }(2003)}}$$|
+| `\cite{garcia2003taxa}`         | $${\color{blue}{(GARCIA; DIDIER, 2003)}}$$                     |
+| `\citeyear{garcia2003taxa}`     | $${\color{blue}{2003}}$$                                       |
+
+
+</td>
+</tr>
+</table>
 
    Note que você pode redefinir o nome da citação, caso você queira. Basta alterar a  primeira string do BibTeX no "references.bib".
 
@@ -79,6 +94,8 @@ Se dá através do arquivo "references.bib" .
 **5. Escrevendo sua monografia**
 
 Agora, basta que você apague o que eu escrevi (usei o comando *\lipsum[1]* que gera parágrafos aleatórios) e escreva seu texto! 
+
+A hierarquia básica é: `\chapter{}` para criar capítulos; `\section{}` para criar seções dentro dos capítulos; `\subsection{}` para criar subseções dentro das seções. 
 
 Lembre-se de que há muitos [tutoriais](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) de como usar LaTeX. Boa sorte!
 
