@@ -49,7 +49,7 @@ Se dá através do arquivo "references.bib" .
 
  - **4.1** - abrir citação
 
-   Ex: Clique no botão abaixo para abrir a citação no formato BibTeX:
+   Ex: Após pesquisar um artigo no Google Scholar, por exemplo, clique no botão abaixo para abrir a citação no formato BibTeX:
 
    <a href='https://github.com/titogbruni/template_thesis'><img      src='https://github.com/titogbruni/template_thesis/blob/main/images_README/citation.png' align="top" height="139" /></a>
 
