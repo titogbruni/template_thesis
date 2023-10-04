@@ -54,14 +54,12 @@ Se dá através do arquivo "references.bib" .
 
  - **4.2** - copie a citação
 
-   <pre>
 `@article{garcia2003taxa,
   title={Taxa de juros, risco cambial e risco Brasil},
   author={Garcia, M{\'a}rcio Gomes Pinto and Didier, Tatiana},
   year={2003},
   publisher={Instituto de Pesquisa Econ{\^o}mica Aplicada (Ipea)}
 }`
-   </pre>
 
  - **4.3** - cole no references.bib
 
