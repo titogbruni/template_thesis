@@ -47,20 +47,20 @@
 
 
 % Formatting chapter titles
-\titleformat{\chapter}[hang]
-  {\sffamily\bfseries\Large}{\thechapter}{8pt}{\Large\raggedright}
+\titleformat{\chapter}[display]
+  {\sffamily\bfseries\large}{\thechapter}{-12pt}{\large\raggedright}
 \titlespacing*{\chapter}{0pt}{-50pt}{40pt}
 
 % Formatting section titles
-\titleformat{\section}
-  {\sffamily\bfseries\large}{\thesection}{8pt}{}
+\titleformat{\section}[display]
+  {\sffamily\bfseries\normalsize}{\thesection}{-10pt}{}
+\titlespacing*{\section}{0pt}{10pt}{0pt}
 
 % Formatting subsection titles
-\titleformat{\subsection}
-  {\sffamily\bfseries\normalsize}{\thesubsection}{1em}{}
+\titleformat{\subsection}[display]
+  {\sffamily\bfseries\normalsize}{\thesubsection}{-10pt}{}\titlespacing*{\subsection}{0pt}{10pt}{0pt}
 
 \usepackage{graphicx} %inserir imagens
-
 
 \hypersetup{
 pdftitle={\@title},
@@ -69,20 +69,17 @@ pdfsubject={\imprimirpreambulo},
 pdfkeywords={PALAVRAS}{CHAVES}{EM}{PORTUGUES},
 pdfcreator={LaTeX with abnTeX2},
 colorlinks=true,
-linkcolor=blue,
+linkcolor=black,
 citecolor=blue,
-urlcolor=blue
+urlcolor=black
 }
 
 % Table of contents
 \makeatletter
 \renewcommand{\tableofcontents}{%
-  \chapter*{\MakeUppercase\contentsname}
+  \chapter*{\contentsname}
   \@starttoc{toc}
 }
-
-
-
 
 
 \begin{document}
@@ -92,23 +89,23 @@ urlcolor=blue
 % Set \parskip to put 10pt between paragraphs
 \setlength{\parskip}{10pt}
 
+
 % Folha de rosto
 \pagenumbering{arabic}
+
 %\pagestyle{headings} %cabeçalho
 \pagestyle{fancy}% Change page style to fancy
 
-\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{#1}{}}
 
 \fancyhf{}% Clear header/footer
-%\fancyhead[C]{\leftmark}
-%\renewcommand{\headrulewidth}{0.4pt}% Default \headrulewidth is 0.4pt
-\fancyhead[RO]{\textit{\nouppercase{\newlinetospace{{\leftmark}}}}}
-
+\fancyhead[LE,LO]{\textit{\sffamily{\nouppercase{\newlinetospace{{\leftmark}}}}}}
+\fancyhead[RE,RO]{\thepage}
 
 \flushright
 \thispagestyle{empty}%tirando numero da primeira pagina
-\includegraphics[width=10cm,right]{logo_puc.png}
+\includegraphics[width=10cm]{logo_puc.png}
 
 \vspace{20pt}
 
@@ -135,29 +132,29 @@ Declaro que o presente trabalho é de minha autoria e que não recorri, para rea
 
 \vspace{60pt}
 
-Rio de Janeiro,
-\wl
-Junho de 2023
+Rio de Janeiro, Junho de 2023
 
 \flushleft
 \pagebreak
 
 
-\section*{Agradecimentos}
+
+
+\section*{\large Agradecimentos}
 \justifying
 
 \lipsum[1]
 
 \newpage
 
-\section*{Abstract}
+\section*{\large Abstract}
 \justifying
 
 \lipsum[1]
 
 \vspace{4\onelineskip}
 \noindent
-\section*{Keywords}
+\section*{\large Keywords}
 \hspace{1em} oi; tudo bem.
 
 
@@ -166,8 +163,8 @@ Junho de 2023
 \tableofcontents
 
 
-% INICIO DOS CAPITULOS
 
+% INICIO DOS CAPITULOS
 \rmfamily % voltando a usar fonte default
 
 \chapter{Primeiro Capitulo}
@@ -188,6 +185,12 @@ Junho de 2023
 
 \lipsum[1]
 
+\lipsum[1]
+
+\lipsum[1]
+
+\lipsum[1]
+
 \chapter{Segundo Capitulo}
 \justifying
 
@@ -200,7 +203,7 @@ Junho de 2023
 
 \appendix
 
-\chapter{Nome}
+\chapter{Nome do primeiro apendice}
 \justifying
 
 \end{document}
